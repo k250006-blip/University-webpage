@@ -25,12 +25,7 @@ body {
   background-color: var(--white);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: var(--primary);
@@ -42,7 +37,7 @@ h6 {
   padding: 0 20px;
 }
 
-/* Simplified navbar with clean design */
+/*navbar with clean design */
 .navbar {
   background: var(--primary);
   padding: 1rem 0;
@@ -106,8 +101,8 @@ h6 {
 }
 
 .slide-image {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -115,8 +110,8 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   background: rgba(26, 58, 82, 0.4);
   display: flex;
   align-items: center;
@@ -682,4 +677,5 @@ tbody tr:hover {
   section h2 {
     font-size: 1.7rem;
   }
+
 }
