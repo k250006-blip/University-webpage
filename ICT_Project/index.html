@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier University - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h2>Premier University</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider">
+      <div class="slide active">
+        <img
+          src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg"
+          alt="Campus"
+          class="slide-image"
+        />
+        <div class="slide-overlay">
+          <div>
+            <h1>Welcome to Premier University</h1>
+            <p>Empowering Future Leaders Through Excellence</p>
+            <a href="#programs" id="exploreBtn" class="btn-primary hero-cta">
+              Explore Programs
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg"
+          alt="Library"
+          class="slide-image"
+        />
+        <div class="slide-overlay">
+          <div>
+            <h1>World-Class Learning Spaces</h1>
+            <p>Access to modern libraries and study environments</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img
+          src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg"
+          alt="Graduation"
+          class="slide-image"
+        />
+        <div class="slide-overlay">
+          <div>
+            <h1>Your Success Begins Here</h1>
+            <p>Thousands of graduates shaping the future</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-arrow prev" onclick="changeSlide(-1)">❮</button>
+      <button class="slider-arrow next" onclick="changeSlide(1)">❯</button>
+
+      <div class="slider-controls">
+        <span class="slider-dot active" onclick="goToSlide(0)"></span>
+        <span class="slider-dot" onclick="goToSlide(1)"></span>
+        <span class="slider-dot" onclick="goToSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 id="studentCount">5000+</h3>
+            <p>Students</p>
+          </div>
+          <div class="stat-card">
+            <h3>95%</h3>
+            <p>Employment Rate</p>
+          </div>
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>Programs</p>
+          </div>
+          <div class="stat-card">
+            <h3>25+</h3>
+            <p>Years Excellence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="programs" id="programs">
+      <div class="container">
+        <h2>Academic Programs</h2>
+        <div class="programs-grid">
+          <div class="program-card">
+            <img
+              src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg"
+              alt="Engineering"
+              class="program-image"
+            />
+            <h3>Engineering</h3>
+            <p>
+              Cutting-edge programs in software, mechanical, and civil
+              engineering.
+            </p>
+          </div>
+
+          <div class="program-card">
+            <img
+              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
+              alt="Business"
+              class="program-image"
+            />
+            <h3>Business Administration</h3>
+            <p>
+              MBA and undergraduate programs with real-world business focus.
+            </p>
+          </div>
+
+          <div class="program-card">
+            <img
+              src="https://images.pexels.com/photos/3861450/pexels-photo-3861450.jpeg"
+              alt="Health Sciences"
+              class="program-image"
+            />
+            <h3>Health Sciences</h3>
+            <p>
+              Advanced medical and nursing programs with research facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES TABLE -->
+    <section class="facilities">
+      <div class="container">
+        <h2>Campus Facilities</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Facility</th>
+              <th>Description</th>
+              <th>Hours</th>
+              <th>Capacity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Main Library</td>
+              <td>500,000+ books and digital resources</td>
+              <td>7 AM - 11 PM</td>
+              <td>3,000</td>
+            </tr>
+            <tr>
+              <td>Computer Labs</td>
+              <td>Latest high-speed systems</td>
+              <td>24/7 Access</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Sports Complex</td>
+              <td>Olympic pool, gym, indoor courts</td>
+              <td>6 AM - 10 PM</td>
+              <td>2,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>Student Testimonials</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p>
+              "Premier University transformed my life. Exceptional faculty and
+              resources!"
+            </p>
+            <h4>- Sarah Johnson, 2023</h4>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Hands-on experience and internships prepared me perfectly for my
+              career."
+            </p>
+            <h4>- Michael Chen, 2022</h4>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Vibrant campus community supporting both academic and personal
+              growth."
+            </p>
+            <h4>- Emma Davis, 2024</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="color: #1a3a52">Ready to Join Us?</h2>
+        <p style="color: #1a3a52">
+          Start your journey to success at Premier University
+        </p>
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+              <li><a href="about.html">Our History</a></li>
+              <li><a href="#">Accreditations</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Academics</h4>
+            <ul>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Admissions</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Campus Life</h4>
+            <ul>
+              <li><a href="#">Clubs</a></li>
+              <li><a href="#">Housing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@premieruniversity.edu</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Premier University. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
